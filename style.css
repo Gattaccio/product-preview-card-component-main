@@ -38,8 +38,10 @@ body {
     flex: 50%;
 }
 
-.left-side img {
-    width: 100%;
+.left-side {
+    height: 450px;
+    background-image: url('/images/image-product-desktop.jpg');
+    background-size: cover;
 }
 .right-side {
     padding: 0 2rem;
@@ -101,6 +103,19 @@ button:hover {
         flex-direction: column;
         width: 90%;
     }
+    .left-side {
+        background-image: url('/images/image-product-mobile.jpg');
+        width: 100%;
+        background-size: cover;
+        height: 235px;
+        background-repeat: no-repeat;
+    }
+    .left-side, .right-side {
+        flex: auto;
+      }
+      .right-side {
+        padding: 2rem 2rem;
+      }
 }
 
 
